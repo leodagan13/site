@@ -110,24 +110,22 @@ body {
 
 
 /* Features Section */
-.features {
-    padding: 80px 0;
-    background-color: var(--primary-light);
+/* Pour les icônes plus grandes */
+.feature-icon {
+    width: 100px;  /* Augmenté de 60px à 100px */
+    height: 100px; /* Augmenté de 60px à 100px */
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--text-color);
-    margin-bottom: 60px;
-}
-
+/* Pour les cartes en format 4x1 */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes au lieu d'une */
-    gap: 20px; /* Espace réduit entre les cartes */
-    max-width: 1000px; /* Augmenté pour accommoder 2 cartes */
+    grid-template-columns: repeat(1, 1fr); /* Une seule colonne */
+    gap: 20px;
+    max-width: 800px; /* Vous pouvez ajuster cette valeur selon vos besoins */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -135,7 +133,6 @@ body {
 .feature-card {
     background: var(--white);
     padding: 40px;
-    aspect-ratio: 1; /* Force les cartes à être carrées */
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -148,8 +145,9 @@ body {
 
 /* Media query pour le responsive */
 @media (max-width: 768px) {
-    .features-grid {
-        grid-template-columns: 1fr; /* Retour à une colonne sur mobile */
+    .feature-icon {
+        width: 80px;  /* Légèrement plus petit sur mobile */
+        height: 80px;
     }
 }
 

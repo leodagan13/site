@@ -19,15 +19,12 @@
 }
 
 .banner-logo {
-    width: 40px;  /* Encore plus petit pour tester */
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 40px;  /* Encore plus petit */
+    height: 40px;  /* Maintient le ratio carré */
 }
 
 .banner-logo-img {
-    width: 40px;  /* Taille fixe pour tester */
-    height: 40px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }

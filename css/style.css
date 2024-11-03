@@ -206,6 +206,64 @@ body {
 }
 
 
+/* Form Section */
+.form-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Style spécifique pour le bouton du formulaire */
+.contact-form .btn-primary {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+
 .footer {
     background-color: #1a1a1a;
     color: var(--white);

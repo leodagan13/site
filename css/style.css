@@ -207,20 +207,22 @@ body {
 /* Form Section */
 .form-section {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--primary-light); /* Même fond que les features */
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 800px; /* Même largeur que les cartes de features */
     margin: 0 auto;
-    padding: 40px;
+    padding: 60px 40px;
     background-color: var(--white);
-    border-radius: 20px;
+    border-radius: 20px; /* Même radius que les cartes */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centre les éléments */
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-align: left; /* Aligne les labels à gauche */
 }
 
 .form-group label {
@@ -230,35 +232,45 @@ body {
     color: var(--text-color);
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.form-group input {
     width: 100%;
-    padding: 12px;
+    padding: 12px 15px;
     border: 2px solid #eee;
     border-radius: 10px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group input:focus {
     outline: none;
     border-color: var(--primary-color);
 }
 
-.form-group textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
 /* Style spécifique pour le bouton du formulaire */
 .contact-form .btn-primary {
-    width: 100%;
-    padding: 15px;
+    width: auto; /* Au lieu de 100% */
+    min-width: 200px;
+    padding: 15px 30px;
     margin-top: 20px;
     font-size: 1.1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: #ff5252;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px 20px;
+    }
 }
 
 
